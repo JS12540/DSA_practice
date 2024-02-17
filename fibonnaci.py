@@ -20,3 +20,6 @@ print("Updated Fibonacci list after computing Fibonacci number at index 3:", lis
 
 print("Fibonacci number at index 5:", dep_fibonnaci(5))
 print("Updated Fibonacci list after computing Fibonacci number at index 5:", list)
+
+# Time Complexity: O(n)
+# Space Complexity: O(n) due to the use of a list for memoization
