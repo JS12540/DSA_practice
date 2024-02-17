@@ -5,7 +5,7 @@
    - Identify the input, output, constraints, and requirements.
 
 2. **Identify Optimal Substructure**:
-   - Determine if the problem can be broken down into smaller subproblems.
+   - Determine if the problem can be broken down into smaller subproblems.Essentially, a subproblem is a smaller version of the main problem that you're trying to solve. In dynamic programming, you solve these smaller subproblems and then use their solutions to build up       to the solution of the main problem.
    - Verify if the optimal solution to the problem depends on the optimal solutions to its subproblems.
 
 3. **Overlapping Subproblems**:
