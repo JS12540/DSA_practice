@@ -1,5 +1,8 @@
 ### Dynamic Programming Problem Solving Steps
 
+- Typically, all the problems that require maximizing or minimizing certain quantities or counting problems that say to count the arrangements under certain conditions or certain probability problems can be solved by using Dynamic Programming.
+- All dynamic programming problems satisfy the overlapping subproblems property and most of the classic Dynamic programming problems also satisfy the optimal substructure property. Once we observe these properties in a given problem be sure that it can be solved using Dynamic Programming.
+
 1. **Understand the Problem**:
    - Read and analyze the problem statement carefully.
    - Identify the input, output, constraints, and requirements.
