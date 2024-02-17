@@ -45,3 +45,13 @@
 11. **Optimize Further (if needed)**:
     - Identify any bottlenecks or areas for improvement in the solution.
     - Optimize the algorithm further to achieve better performance if necessary.
+
+
+|                     | Tabulation                                    | Memoization                                   |
+|---------------------|-----------------------------------------------|-----------------------------------------------|
+| State               | State transition relation is difficult to think | State transition relation is easy to think   |
+| Code                | Code gets complicated when a lot of conditions are required | Code is easy and less complicated           |
+| Speed               | Fast, as we directly access previous states from the table | Slow due to a lot of recursive calls and return statements |
+| Subproblem solving | If all subproblems must be solved at least once, a bottom-up dynamic programming algorithm usually outperforms a top-down memoized algorithm by a constant factor | If some subproblems in the subproblem space need not be solved at all, the memoized solution has the advantage of solving only those subproblems that are definitely required |
+| Table entries       | In the Tabulated version, starting from the first entry, all entries are filled one by one | Unlike the Tabulated version, all entries of the lookup table are not necessarily filled in Memoized version. The table is filled on demand. |
+| Approach            | Generally, tabulation(dynamic programming) is an iterative approach | On the other hand, memoization is a recursive approach. |
