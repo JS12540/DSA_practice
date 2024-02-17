@@ -6,6 +6,7 @@
 
 2. **Identify Optimal Substructure**:
    - Determine if the problem can be broken down into smaller subproblems.Essentially, a subproblem is a smaller version of the main problem that you're trying to solve. In dynamic programming, you solve these smaller subproblems and then use their solutions to build up       to the solution of the main problem.
+   - Once we've identified the subproblems, we need to establish a relationship between the main problem and its subproblems. This relationship is called a recurrence relation. It describes how we can use solutions to smaller subproblems to solve the main problem.
    - Verify if the optimal solution to the problem depends on the optimal solutions to its subproblems.
 
 3. **Overlapping Subproblems**:
