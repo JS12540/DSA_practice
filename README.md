@@ -58,3 +58,53 @@
 | Subproblem solving | If all subproblems must be solved at least once, a bottom-up dynamic programming algorithm usually outperforms a top-down memoized algorithm by a constant factor | If some subproblems in the subproblem space need not be solved at all, the memoized solution has the advantage of solving only those subproblems that are definitely required |
 | Table entries       | In the Tabulated version, starting from the first entry, all entries are filled one by one | Unlike the Tabulated version, all entries of the lookup table are not necessarily filled in Memoized version. The table is filled on demand. |
 | Approach            | Generally, tabulation(dynamic programming) is an iterative approach | On the other hand, memoization is a recursive approach. |
+
+
+## Time Complexity Analysis
+
+# Growth Rate Comparison
+
+## **Order of Growth from Fastest to Slowest**
+1. **O(1) - Constant Time** (Fastest)
+2. **O(log N) - Logarithmic Time**
+3. **O(N) - Linear Time**
+4. **O(N log N) - Quasi-Linear Time**
+5. **O(N²) - Quadratic Time**
+6. **O(N³) - Cubic Time**
+7. **O(2^N) - Exponential Time**
+8. **O(N!) - Factorial Time** (Slowest)
+
+---
+
+## **Comparison Table**
+
+| N     | O(1)  | O(log N) | O(N)  | O(N log N) | O(N²)  | O(N³)  | O(2^N)  | O(N!)       |
+|-------|------|---------|------|-----------|------|------|--------|------------|
+| 10    | 1    | 3      | 10   | 33        | 100  | 1000 | 1024   | 3.6M       |
+| 100   | 1    | 6      | 100  | 664       | 10K  | 1M   | 1.27E30| 9.3E157    |
+| 1000  | 1    | 10     | 1K   | 10K       | 1M   | 1B   | 1E301  | ∞ (Too Large) |
+
+- **O(1) stays constant** regardless of input size.
+- **O(log N) grows very slowly**, making logarithmic algorithms efficient for large N.
+- **O(N log N) is slightly worse than O(N)** but much better than O(N²).
+- **O(N²), O(N³), O(2^N), O(N!) grow rapidly**, making them impractical for large N.
+
+---
+
+## **Graphical Growth Trend**
+- **O(1)**: ─────────
+- **O(log N)**: ▁▂▃▅▆▇
+- **O(N)**: ▁▂▃▅▆▇█
+- **O(N log N)**: ▁▂▃▅▆▇█▉
+- **O(N²)**: ▁▁▂▂▃▃▅▅▆▇█
+- **O(N³)**: ▁▁▁▂▂▃▃▅▆█
+- **O(2^N)**: ▁▁▁▁▂▂▃▅█
+- **O(N!)**: ▁▁▁▁▁▂▂▃█
+
+---
+
+## **Conclusion**
+- **Logarithmic (O(log N)) and Linear (O(N)) algorithms are efficient** for large inputs.
+- **Quadratic (O(N²)) and worse are infeasible for large inputs (e.g., N > 10^5).**
+- **Exponential (O(2^N)) and Factorial (O(N!)) algorithms grow too fast** to be practical.
+
